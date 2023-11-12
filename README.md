@@ -17,3 +17,9 @@ Requirements for the software and other tools to build, test and push
 - [Python](https://www.python.org/downloads/)
 - [Meltano](https://meltano.com/)
 - [Postgresql](https://www.postgresql.org/download/)
+
+### Test export to json
+
+I tested also loading data from csv file to json file so we need the json loader configurated :
+
+    meltano add loader target-jsonl

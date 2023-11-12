@@ -10,7 +10,25 @@ plugins:
   - name: tap-csv
     variant: meltanolabs
     pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    config:
+      files:
+      - entity: accounts
+        file: extract/accounts.csv
+        path: C:/Users/mineo/Desktop/Meltano_Demo/Demo/extract/accounts.csv
+        keys:
+        - user_id
   loaders:
   - name: target-postgres
-    variant: meltanolabs
-    pip_url: meltanolabs-target-postgres
+    variant: transferwise
+    pip_url: pipelinewise-target-postgres
+    config:
+      host: localhost
+      port: 5432
+      user: postgres
+      database: postgres
+      add_record_metadata: true
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
+    config:
+      destination_path: ''
