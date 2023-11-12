@@ -16,4 +16,4 @@ Add the loader :
 Requirements for the software and other tools to build, test and push 
 - [Python](https://www.python.org/downloads/)
 - [Meltano](https://meltano.com/)
-- [Postgresql] (https://www.postgresql.org/download/)
+- [Postgresql](https://www.postgresql.org/download/)
