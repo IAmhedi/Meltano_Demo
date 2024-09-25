@@ -1,4 +1,4 @@
-# Meltano Demo with CSV files and posqreSQL database
+# Meltano Demo with CSV files and PostgreSql database
 
 Using csv files and feed them to a PostgreSql Database.
 
